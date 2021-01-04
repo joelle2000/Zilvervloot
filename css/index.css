@@ -1,0 +1,17 @@
+h1{
+	margin-bottom: 100px;
+}
+
+#field-2{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+#sign-up{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
