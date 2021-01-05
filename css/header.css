@@ -29,3 +29,10 @@ header{
 .activities{
 	margin-top: 50px;
 }
+
+#content-container{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+}

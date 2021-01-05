@@ -39,13 +39,7 @@ textarea{
 textarea:hover{
   border: 10px solid #ff5f00;
 }
-}
 
-#content-container{
-	display: flex;
-	flex-direction: column;
-	margin-left: 10%;
-}
 
 #escape-hatch{
 	width: 15%;
