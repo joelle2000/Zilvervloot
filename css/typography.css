@@ -7,6 +7,9 @@ h1{
 	color: #21468B;
 	margin-bottom: 300px;
 }
+.header-no-margin{
+	margin-bottom: 0;
+}
 
 strong{
 	font-family: 'Raleway', sans-serif;
