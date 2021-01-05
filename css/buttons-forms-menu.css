@@ -11,25 +11,27 @@ form{
 }
 
 input{
-	border: 2px solid #ff5f00;
-	border-radius: 50px;
-	height: 50px;
+	border: 5px solid #ff5f00;
+	border-radius: 100px;
+	height: 100px;
 	width: 100%;
 	margin-bottom: 20px;
+	padding: 0 10px;
 }
 
 input:hover{
-	border: 5px solid #ff5f00;
+	border: 10px solid #ff5f00;
 }
 
 label{
-	margin-top: 20px;
+	margin: 20px 0 10px 0;
+
 }
 
 #content-container{
 	display: flex;
 	flex-direction: column;
-	margin-left: 5%;
+	margin-left: 10%;
 }
 
 .checkbox{
@@ -43,6 +45,12 @@ label{
 	background-color: #ff5f00;
 	border-radius: 50px;
 	text-decoration: none;
-	padding: 10px 30px;
+	padding: 20px 50px;
 	float: right;
+	margin-top: 100px;
+}
+
+.button:hover{
+	color: #ffffff;
+	background-color: #ff7f00;
 }

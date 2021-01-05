@@ -3,14 +3,14 @@
 
 h1{
 	font-family: 'Raleway', sans-serif;
-	font-size: 36pt;
+	font-size: 72pt;
 	color: #21468B;
 }
 
 
 strong{
 	font-family: 'Raleway', sans-serif;
-	font-size: 14pt;
+	font-size: 28pt;
 	color: #3B3B3B;	
 }
 
@@ -20,17 +20,21 @@ strong{
 
 a{
 	font-family: 'Lato', sans-serif;
+	font-size: 24pt;
 	color: #21468B;
+}
+a:hover{
+	color: #052560;
 }
 
 input, label{
 	font-family: 'Lato', sans-serif;
-	font-size: 14pt;
+	font-size: 24pt;
 	color: #3B3B3B;
 }
 
 p{
 	font-family: 'Lato', sans-serif;
-	font-size: 12pt;
+	font-size: 24pt;
 	color: #3B3B3B;
 }
