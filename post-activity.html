@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-	<title>Home</title>
+	<title>Activiteit plaatsen</title>
 
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" type="text/css" href="css/typography.css">
 	<link rel="stylesheet" type="text/css" href="css/buttons-forms-menu.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/help.css">
 
 </head>
 
@@ -53,26 +54,31 @@
 	
 	<div id="content-container">
 
-		<div class="post">
-			<strong> Organisatie 1</strong>
-			<img src="images/elders-on-swing.png" alt="ouderen in een speeltuin" class="image">
-			<p class="description">Beschrijving van de activiteit die georganiseerd wordt.</p>
-			<a href="#" class="button">Inschrijven</a>
-		</div>
+		<h1 class="heading-no-margin">Activiteit plaatsen</h1>
 
-		<div class="post">
-			<strong> Organisatie 2</strong>
-			<img src="images/elders-with-flowers.png" alt="ouderen in een speeltuin" class="image">
-			<p class="description">Beschrijving van de activiteit die georganiseerd wordt.</p>
-			<a href="#" class="button">Inschrijven</a>
-		</div>
+		<form>
+			<fieldset>
+				<label for="name-activity">Hoe heet de activiteit?</label>
+				<input type="text" name="username" id="name-activity">
 
-		<div class="post">
-			<strong> Organisatie 3</strong>
-			<img src="images/elders-holding-hands.png" alt="ouderen in een speeltuin" class="image">
-			<p class="description">Beschrijving van de activiteit die georganiseerd wordt.</p>
-			<a href="#" class="button">Inschrijven</a>
-		</div>
+				<label for="activity-description">Geef een beschrijving over de activiteit</label>
+				<textarea id="activity-description" name="activity-description"></textarea> 
+			</fieldset>
+
+			<fieldset>
+				<label for="activity-date">Wanneer is de activiteit?</label>
+				<input type="date" name="activity-date" id="activity-date">
+
+				<label for="activity-time">Hoe laat is de activiteit?</label>
+				<input type="time" name="activity-time" id="activity-time">
+
+				<label for="activity-place">Waar is de activiteit?</label>
+				<input type="text" name="activity-place" id="activity-place">
+
+			</fieldset>
+
+			<a href="home.html" class="button">Activiteit plaatsen</a>
+		</form>	
 
 	</div>
 </body>

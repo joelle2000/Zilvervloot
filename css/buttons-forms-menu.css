@@ -28,6 +28,19 @@ label{
 
 }
 
+textarea{
+  border: 5px solid #ff5f00;
+  border-radius: 50px;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 30px 10px;
+}
+textarea:hover{
+  border: 10px solid #ff5f00;
+}
+}
+
 #content-container{
 	display: flex;
 	flex-direction: column;
@@ -70,11 +83,6 @@ label{
 
 
 /*Hamburgermenu*/
-
-body{
-  margin: 0;
-  padding: 0;
-}
 
 #menuToggle
 {
