@@ -1,9 +1,9 @@
 #blue-checkmark{
 	width: 80%;
 	height: auto;
+	margin: auto;
 }
 
 .button{
-	margin-left: 60%;
-	margin-right: 5%;
+	align-self: flex-end;	
 }
