@@ -1,23 +1,3 @@
-/*Text with Raleway font*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
-h1{
-	font-family: 'Raleway', sans-serif;
-	font-size: 72pt;
-	color: #21468B;
-	margin-bottom: 300px;
-}
-.header-no-margin{
-	margin-bottom: 0;
-}
-
-strong{
-	font-family: 'Raleway', sans-serif;
-	font-size: 28pt;
-	color: #3B3B3B;	
-}
-
-
 /*Text with Lato font*/
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
@@ -41,3 +21,37 @@ p{
 	font-size: 24pt;
 	color: #3B3B3B;
 }
+
+
+
+/*Text with Raleway font*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 72pt;
+	color: #21468B;
+	margin-bottom: 300px;
+}
+.header-no-margin{
+	margin-bottom: 0;
+}
+
+#menuToggle a{
+	font-family: 'Raleway', sans-serif;
+	font-size: 48pt;
+	color: #ff5f00;
+  	font-weight: bold;
+}
+
+#menuToggle a:hover
+{
+  color: #C93000;
+}
+
+strong{
+	font-family: 'Raleway', sans-serif;
+	font-size: 28pt;
+	color: #3B3B3B;	
+}
+
