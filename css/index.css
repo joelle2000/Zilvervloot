@@ -10,8 +10,7 @@ h1{
 	margin-bottom: 20px;
 }
 
-#sign-up{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+#sign-up{	
+	margin: 30px 0 50px 0;
+	text-align: center;
 }

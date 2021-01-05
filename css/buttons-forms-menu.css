@@ -6,16 +6,30 @@ fieldset{
 	border: 0px;
 }
 
+form{
+	width: 80%;
+}
+
 input{
-	border: 1px solid #ff5f00;
+	border: 2px solid #ff5f00;
 	border-radius: 50px;
 	height: 50px;
-	width: 300px;
+	width: 100%;
 	margin-bottom: 20px;
+}
+
+input:hover{
+	border: 5px solid #ff5f00;
 }
 
 label{
 	margin-top: 20px;
+}
+
+#content-container{
+	display: flex;
+	flex-direction: column;
+	margin-left: 5%;
 }
 
 .checkbox{
