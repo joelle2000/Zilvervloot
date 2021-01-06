@@ -77,13 +77,27 @@ textarea:hover{
 
 
 /*Hamburgermenu*/
+/*The menu doesn't always fully hide and i can't get the word 'menu' displayed next to it*/
+
+body
+{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+}
+
+a
+{
+  transition: color 0.3s ease;
+}
+
 
 #menuToggle
 {
   display: block;
-  position: relative;
-  top: -120px;
-  right: -90%; /*this thing does weird sometimes. I've also tried left: 90%;*/
+  position: absolute;
+  top: 50px;
+  right: 50px;
   
   z-index: 1;
   
@@ -94,8 +108,8 @@ textarea:hover{
 #menuToggle input
 {
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 32px;
   position: absolute;
   top: -7px;
   left: -5px;
@@ -114,13 +128,13 @@ textarea:hover{
 #menuToggle span
 {
   display: block;
-  width: 68px;
-  height: 10px;
-  margin-bottom: 10px;
+  width: 70px;
+  height: 15px;
+  margin-bottom: 5px;
   position: relative;
   
   background: #ff5f00;
-  border-radius: 5px;
+  border-radius: 3px;
   
   z-index: 1;
   
@@ -149,7 +163,7 @@ textarea:hover{
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #ff5f00;
+  background: #232323;
 }
 
 /*
@@ -162,10 +176,11 @@ textarea:hover{
 }
 
 /*
- * Oh yeah and the last one should go the other direction
+ * Ohyeah and the last one should go the other direction
  */
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
+  opacity: 1;
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -176,10 +191,11 @@ textarea:hover{
 #menu
 {
   position: absolute;
-  width: 70%;
-  margin: -100px 0 0 -70%;
+  width: 500px;
+  margin: -100px 0 0 0;
   padding: 50px;
   padding-top: 125px;
+  right: -200px; /* this is how far the menu is off screen*/
   
   background: #ffffff;
   list-style-type: none;
@@ -187,20 +203,31 @@ textarea:hover{
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(150%, 0);
+  transform: translate(100%, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
 {
-  padding: 30px 0;
+  padding: 20px 0 50px;
+  font-size: 48px;
 }
 
 /*
- * And let's slide it in from the left
+ * And let's fade it in from the left
  */
 #menuToggle input:checked ~ ul
 {
   transform: none;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+    transform: none;
+    opacity: 0;
+
+    transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
 }
